@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+<!-- Analytics 
+	Changes applied in this HTML related to SEO / Accessibility / Performance
+	1 - Language on html tag changed - Default is not a vallid value. Replace by fr
+	2 - meta tag
+	------------
+		a - keywords tag is not used by google. Removed. Instead keywords have been included in titles, description, 
+		img alternate text (where coherent), paragraph, etc....
+		b - description was empty: updated with input in relation with the content
+		c - meta tag robots added wth index & follow attributes
+	3 - title tag
+	-------------
+		Was set to page2: A proper title provided containing keywords
+	4 - Semantic tags
+	-----------------
+		No semantic tag was used. Semantic tags updated (Header, Section, Footer)
+	5 - HEADER 
+	----------
+		Logo - Logo was clickable and brought back to the welcome page. Not necessary (A link exist in navigation panel) 
+			   and not clear. So logo shown just as a logo
+		Navigation area - Navigation panel has been simplified. It contained a link to go back to welcome page but also an
+		empty link and a link on itself. Only the link to welcome page remains
+	6 - banner (id="bloc-6")
+	------------------------
+		On original version got a paper texture and a brown background. This created a contrast
+		issue with the h1 title.
+		Banner replaced by the same banner as the one used on welcome page (Resolves contrast problem & keeps coherence on 
+		whole site)
+	7 - Form 
+	--------
+		Form has been reviewed.
+			   a - Label tag linked to its related input field. (Was not)
+			   b - Button to submit replaced by an input type button within the form so it is included in the keyboard tab
+			       capability 
+			   a - The "How did you hear about us" - Originally this was set as an email type which is wrong.
+	8 - Footer
+	----------
+		Set the same as the welcome page. Keeps coherence in the whole site
+				 Social network links set to their proper home page. (Originally link was sending the index.html page)
+	9 - General
+	-----------
+		Contrast - In order to increase contrast between text & banner background, a black background is added behind the
+		text area where it is required (Background is transparent enough to keep seeing banner and increase contrast) 
+	Analytics END -->
+
+	<meta name="description" content="Formulaire de contact. La Panthère - Meilleure entreprise de web design de Lyon vous propose leurs services d'experts en conception web.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+	<meta name="robots" content="index,follow">
+
+    <link rel="shortcut icon" type="image/png" href="favicon.jpg">    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">	
+    
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>
+
+    <title>La Panthère-Meilleure agence web design de Lyon-Formulaire de contact</title>
+    
+</head>
+<body>
+<!-- Principal conteneur -->
+<div class="page-container">
+    
+<!-- bloc-0 
+	ED - Use semantic tag header instead of simple div
+-->
+<header class="bloc bgc-white l-bloc " id="bloc-0">
+	<div class="container bloc-sm">
+		<nav class="navbar row">
+			<div class="navbar-header">
+				<span class="navbar-brand"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo La Panthère-Meilleure agence web design à Lyon" height="40"></span>
+			</div>
+
+			<div>	
+				<ul class="site-navigation nav navbar-nav">
+					<li>
+						<a href="index.html" aria-label="Retour au menu Accueil">Accueil</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+<!-- bloc-0 END -->
+
+<!-- bloc-6 
+	ED - Use semantic tag section instead of simple div
+-->
+<section class="bloc d-bloc bg-banniere bg-t-edge b-parallax" id="bloc-6">
+	<div class="container bloc-lg">
+		<div class="row tight-width-whitespace black-background">
+			<div class="col-sm-12">
+				<img src="img/logo.png" class="center-block" width="100" alt="Logo Agence Web design La Panthère, Lyon">				
+				<h1 class="text-center hero-bloc-text tc-atomic-tangerine">
+					Parlons web design !
+				</h1>
+				<p class="text-center mg-lg white tight-width-whitespace">
+					Ravis que vous souhaitiez collaborer avec notre agence.<br>
+					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- bloc-6 END -->
+
+<!-- bloc-7 
+	ED - Use semantic tag section istead of simple div
+-->
+<section class="bloc bgc-white l-bloc" id="bloc-7">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-6">
+				<form id="form_1" novalidate success-msg="Message envoyé." fail-msg="Désolé. Il semble qu'un problème technique soit survenu. Réessayez ultérieurement s'il vous plait!">
+					<p class="form-group">
+						<label class="p-big" for="name">Votre Nom</label>
+						<input class="form-control" type="text" id="name" name="name" autofocus required>
+					</p>
+					<p class="form-group">
+						<label class="p-big" for="email">Adresse Courriel</label>
+						<input class="form-control" type="email" id="email" name="email" required>
+					</p>
+					<p class="form-group">
+						<label class="p-big" for="input_504">Comment nous avez-vous connu ?</label>
+						<select class="form-control" name="input_504" id="input_504">
+							<option value="Internet">Recherche Internet</option>
+							<option value="customer">Par un de nos clients</option>																
+							<option value="network">Par le biais des réseaux sociaux</option>
+							<option value="advert">Publicité</option>
+							<option value="directory">Annuaire</option>
+							<option value="wordofmouth">Bouche à oreille</option>							
+							<option value="other">Autre</option>
+						</select>
+					</p>
+					<p class="form-group">
+						<label class="p-big" for="message">Votre projet (Ajoutez autant de détails que nécessaire)</label>
+						<textarea class="form-control" id="message" name="message" rows="4" cols="50" required></textarea>
+					</p> 
+					<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" value="Envoyer" type="submit" id="submit" name="submit">
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- bloc-7 END -->
+
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')" aria-label="Retour en haut de la page"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
+
+<!-- Footer - bloc-8 
+	 ED - As this a footer, use the semantic tag footer rather than div
+-->
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="text-center white">
+					Agence La Panthère
+				</h2>
+				<p class="text-center white p-big">
+					2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+				</p>
+				<p class="text-center white">
+					<a href="mailto:contact@agencelapanthere.com" aria-label="Envoyer un mail à l'agence Web Design La Panthere"><span class="fa fa-envelope icon-md"></span></a><br><br><br>
+				</p>
+
+				<div class="row row-no-gutters social">
+					<div class="col-sm-3">
+						<div class="text-center">
+							<a class="social" href="https://twitter.com/" aria-label="Accés réseau social Twitter"><span class="fa fa-twitter icon-md"></span></a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-center">
+							<a class="social" href="https://fr-fr.facebook.com/" aria-label="Accés réseau social Facebook"><span class="fa fa-facebook icon-md"></span></a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-center">
+							<a class="social" href="https://dribbble.com/" aria-label="Accés réseau social Dribble"><span class="fa fa-dribbble icon-md"></span></a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-center">
+							<a class="social" href="https://www.instagram.com/" aria-label="Accés réseau social Instagram"><span class="fa fa-instagram icon-md"></span><br><br><br></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</footer>
+<!-- Footer - bloc-8 END -->
+
+</div>
+<!-- Principal conteneur END -->
+</body>
+</html>
