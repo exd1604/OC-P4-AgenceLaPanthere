@@ -744,6 +744,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.black {
+    color: black!important;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -813,14 +817,6 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
