@@ -475,7 +475,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 40px!important;
 }
 
 .icon-lg {
@@ -763,7 +763,7 @@ h4 {
 
 .black-background {
     /*background-color: rgba(165, 147, 99, 0.7);*/
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -774,10 +774,6 @@ h4 {
 
 .bgc-white {
     background-color: #FFFFFF;
-}
-
-.bgc-dark-slate-blue {
-    background-color: #364577;
 }
 
 .bgc-atomic-tangerine {
