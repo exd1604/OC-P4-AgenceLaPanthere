@@ -45,7 +45,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 130px 85px;
 }
 
 .bloc-md {
@@ -681,8 +681,8 @@ p {
 }
 
 .p-big {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .tight-width-whitespace {
@@ -762,8 +762,8 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
+    background-color: #202020;
+    padding: 20px 5px;
 }
 
 .bold-link {
@@ -985,7 +985,7 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 70px 5px;
     }
     .bloc-sm,
     .bloc-md {
