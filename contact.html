@@ -71,7 +71,7 @@
 <!-- bloc-0 
 	ED - Use semantic tag header instead of simple div
 -->
-<header class="bloc bgc-white l-bloc " id="bloc-0" role="banner">
+<header class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 		<nav class="navbar row black">
 			<div class="navbar-header">
@@ -89,11 +89,11 @@
 	</div>
 </header>
 <!-- bloc-0 END -->
-<main role="main">
+<main>
 <!-- bloc-6 
 	ED - Use semantic tag section instead of simple div
 -->
-	<section class="bloc d-bloc bg-banniere bg-t-edge b-parallax" id="bloc-6" role="region" aria-label="Remerciement">
+	<section class="bloc d-bloc bg-banniere bg-t-edge b-parallax" id="bloc-6">
 		<div class="container bloc-lg">
 			<div class="row tight-width-whitespace black-background">
 				<div class="col-sm-12">
@@ -113,46 +113,44 @@
 <!-- bloc-7 
 	ED - Use semantic tag section instead of simple div
 -->
-	<section class="bloc bgc-white l-bloc" id="bloc-7" role="region" aria-label="Détail de votre projet">
+	<section class="bloc bgc-white l-bloc" id="bloc-7">
 				<div class="container bloc-md">
-			<!--	<div class="row"> -->
-						<div class="row col-sm-6">
-							<h2 class="black text-center">
-								Détails de votre projet<br>					
-							</h2>
-							<p class="text-center black p-big">
-								Remplissez et envoyez nous le formulaire ci-dessous s.v.p<br><br>
+					<div class="row col-sm-6">
+						<h2 class="black text-center">
+							Détails de votre projet<br>					
+						</h2>
+						<p class="text-center black p-big">
+							Remplissez et envoyez nous le formulaire ci-dessous s.v.p<br><br>
+						</p>
+						<form id="form_1" novalidate data-success-msg="Message Envoyé" data-fail-msg="Désolé. Notre serveur a rencontré un problème. Veuillez réessayer ultérieurement" aria-label="Formulaire Description Projet">
+							<p class="form-group">
+								<label class="p-big" for="name">Votre Nom</label>
+								<input class="form-control" type="text" id="name" name="name" autofocus required>
 							</p>
-							<form id="form_1" novalidate data-success-msg="Message Envoyé" data-fail-msg="Désolé. Notre serveur a rencontré un problème. Veuillez réessayer ultérieurement" aria-label="Formulaire Description Projet">
-								<p class="form-group">
-									<label class="p-big" for="name">Votre Nom</label>
-									<input class="form-control" type="text" id="name" name="name" autofocus required>
-								</p>
-								<p class="form-group">
-									<label class="p-big" for="email">Adresse Courriel</label>
-									<input class="form-control" type="email" id="email" name="email" required>
-								</p>
-								<p class="form-group">
-									<label class="p-big" for="input_504">Comment nous avez-vous connu ?</label>
-									<select class="form-control" name="input_504" id="input_504">
-										<option value="Internet">Recherche Internet</option>
-										<option value="customer">Par un de nos clients</option>																
-										<option value="network">Par le biais des réseaux sociaux</option>
-										<option value="advert">Publicité</option>
-										<option value="directory">Annuaire</option>
-										<option value="wordofmouth">Bouche à oreille</option>							
-										<option value="other">Autre</option>
-									</select>
-								</p>
-								<p class="form-group">
-									<label class="p-big" for="message">Votre projet (Autant de détails que vous le souhaitez)</label>
-									<textarea class="form-control" id="message" name="message" rows="4" cols="50" required></textarea>
-								</p> 
-								<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" value="Envoyer" type="submit" id="submit" name="submit">
-							</form>
-						</div>
-			<!--	</div> -->
-				</div>
+							<p class="form-group">
+								<label class="p-big" for="email">Adresse Courriel</label>
+								<input class="form-control" type="email" id="email" name="email" required>
+							</p>
+							<p class="form-group">
+								<label class="p-big" for="input_504">Comment nous avez-vous connu ?</label>
+								<select class="form-control" name="input_504" id="input_504">
+									<option value="Internet">Recherche Internet</option>
+									<option value="customer">Par un de nos clients</option>																
+									<option value="network">Par le biais des réseaux sociaux</option>
+									<option value="advert">Publicité</option>
+									<option value="directory">Annuaire</option>
+									<option value="wordofmouth">Bouche à oreille</option>							
+									<option value="other">Autre</option>
+								</select>
+							</p>
+							<p class="form-group">
+								<label class="p-big" for="message">Votre projet (Autant de détails que vous le souhaitez)</label>
+								<textarea class="form-control" id="message" name="message" rows="4" cols="50" required></textarea>
+							</p> 
+							<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" value="Envoyer" type="submit" id="submit" name="submit">
+						</form>
+					</div>
+			</div>
 	</section>
 <!-- bloc-7 END -->
 
@@ -165,7 +163,7 @@
 <!-- Footer - bloc-8 
 	 ED - As this a footer, use the semantic tag footer rather than div
 -->
-<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8" role="contentinfo">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -197,7 +195,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com/" aria-label="Accés réseau social Instagram"><i class="fa fa-instagram icon-md"></i></span><br><br><br></a>
+							<a class="social" href="https://www.instagram.com/" aria-label="Accés réseau social Instagram"><span class="fa fa-instagram icon-md"></span><br><br><br></a>
 						</div>
 					</div>
 				</div>
