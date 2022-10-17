@@ -8,9 +8,9 @@
 	2 - meta tag
 	§§§§§§§§§§§§
 		a - keywords tag is not used by google. Removed. Instead keywords have been included in titles, description, 
-		img alternate text (where coherent), paragraph, etc....
+			img alternate text (where coherent), paragraph, etc....
 		b - description was empty: updated with input in relation with the content
-		c - meta tag robots added wth index & follow attributes
+		c - meta tag robots added with index & follow attributes
 	3 - title tag
 	§§§§§§§§§§§§§
 		Was set to page2: A proper title provided containing keywords
@@ -19,10 +19,15 @@
 		No semantic tag was used. Semantic tags updated (Header, Section, Footer)
 	5 - HEADER 
 	§§§§§§§§§§
-		Logo - Logo was clickable and brought back to the welcome page. Not necessary (A link exist in navigation panel) 
-			   and not clear. So logo shown just as a logo
-		Navigation area - Navigation panel has been simplified. It contained a link to go back to welcome page but also an
-		empty link and a link on itself. Only the link to welcome page remains
+		Logo 
+		- 	Logo was clickable and brought back to the welcome page. Not necessary (A link exist in navigation panel) 
+			and not clear. So logo shown just as a logo
+		Navigation area
+		- 	Navigation panel has been simplified. It contained a link to go back to welcome page but also an
+			empty link and a link on itself. Only the link to welcome page remains
+		Link:
+		-	Colored in blue, underlined & bold when :hover. This gives not only a color information information for 
+			accessiblity.
 	6 - banner (id="bloc-6")
 	§§§§§§§§§§§§§§§§§§§§§§§§
 		On original version got a paper texture and a brown background. This created a contrast
@@ -35,7 +40,7 @@
 			   a - Label tag linked to its related input field. (Was not)
 			   b - Button to submit replaced by an input type button within the form so it is included in the keyboard tab
 			       capability 
-			   a - The "How did you hear about us" - Originally this was set as an email type which is wrong.
+			   c - The "How did you hear about us" - Originally this was set as an email type which is wrong.
 	8 - Footer
 	§§§§§§§§§§
 		Set the same as the welcome page. Keeps coherence in the whole site
@@ -78,13 +83,11 @@
 				<span class="navbar-brand black"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo La Panthère-Meilleure agence web design à Lyon" height="40"></span>
 			</div>
 
-			<div>	
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="index.html" aria-label="Retour au menu Accueil">Accueil</a>
 					</li>
 				</ul>
-			</div>
 		</nav>
 	</div>
 </header>
@@ -125,15 +128,15 @@
 						<form id="form_1" novalidate data-success-msg="Message Envoyé" data-fail-msg="Désolé. Notre serveur a rencontré un problème. Veuillez réessayer ultérieurement" aria-label="Formulaire Description Projet">
 							<p class="form-group">
 								<label class="p-big" for="name">Votre Nom</label>
-								<input class="form-control" type="text" id="name" name="name" autofocus required>
+								<input class="form-control" type="text" id="name" name="name" autofocus required title="Nom Obligatoire (majuscule et/ou minuscule)">								
 							</p>
 							<p class="form-group">
 								<label class="p-big" for="email">Adresse Courriel</label>
-								<input class="form-control" type="email" id="email" name="email" required>
+								<input class="form-control" type="email" id="email" name="email" required title="Adresse mail valide obligatoire">
 							</p>
 							<p class="form-group">
 								<label class="p-big" for="input_504">Comment nous avez-vous connu ?</label>
-								<select class="form-control" name="input_504" id="input_504">
+								<select class="form-control" name="input_504" id="input_504" title="Cliquez et choisissez une option dans le menu déroulant">
 									<option value="Internet">Recherche Internet</option>
 									<option value="customer">Par un de nos clients</option>																
 									<option value="network">Par le biais des réseaux sociaux</option>
@@ -145,7 +148,7 @@
 							</p>
 							<p class="form-group">
 								<label class="p-big" for="message">Votre projet (Autant de détails que vous le souhaitez)</label>
-								<textarea class="form-control" id="message" name="message" rows="4" cols="50" required></textarea>
+								<textarea class="form-control" id="message" name="message" rows="4" cols="50" required title="Description de votre projet obligatoire"></textarea>
 							</p> 
 							<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" value="Envoyer" type="submit" id="submit" name="submit">
 						</form>
